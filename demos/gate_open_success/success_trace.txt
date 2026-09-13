@@ -1,0 +1,5 @@
+Gate open output
+[info] waiting for a live frame + gripper pose...
+[perceive] prompt 'a partially red object'  infer 288 ms
+[perceive] best on-target 0.3152  best off-target 0.2036  margin +0.1117
+[gate] OPEN: cube confirmed, margin sufficient – proceeding.
