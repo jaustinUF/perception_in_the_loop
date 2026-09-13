@@ -1,0 +1,8 @@
+Gate closed output
+[info] waiting for a live frame + gripper pose...
+[perceive] prompt 'a partially red object'  infer 271 ms
+[perceive] best on-target 0.2234  best off-target 0.2732  margin -0.0498
+[gate] REFUSE to act: margin below gate (need score>=0.1, margin>=0.05)
+
+[report] no motion -- perception gate closed. Loop refused to act on an untrusted detection.
+[done] closed-loop pass complete.
