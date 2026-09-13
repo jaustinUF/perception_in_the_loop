@@ -1,0 +1,24 @@
+Prompt "a partially red object; color is very important, so object must have a obvious red area" --target-xy 641,541
+ score 0.1263  'a partially red object; color is very important'  box [620,537,660,597]  (40x60 px)
+[margin] target ~(641,541) tol 60 px:
+  best ON-target : score 0.1263  'a partially red object; color is very important'  box [620,537,660,597]
+  best OFF-target: score 0.0654  'a partially red object; color is very important'  box [156,7,1065,715]  <- best FALSE positive
+  MARGIN         : +0.0609  [THIN]
+
+
+Prompt "a partially red object; color is very important" --target-xy 641,541
+  score 0.1263  'a partially red object; color is very important'  box [620,537,660,597]  (40x60 px)
+[margin] target ~(641,541) tol 60 px:
+  best ON-target : score 0.1263  'a partially red object; color is very important'  box [620,537,660,597]
+  best OFF-target: score 0.0654  'a partially red object; color is very important'  box [156,7,1065,715]  <- best FALSE positive
+  MARGIN         : +0.0609  [THIN]
+
+
+Prompt "a partially red object" --target-xy 641,541
+  score 0.3117  'a partially red object'  box [620,537,660,597]  (40x60 px)
+  score 0.2020  'a partially red object'  box [571,57,702,476]  (131x419 px)
+[margin] target ~(641,541) tol 60 px:
+  best ON-target : score 0.3117  'a partially red object'  box [620,537,660,597]
+  best OFF-target: score 0.2020  'a partially red object'  box [571,57,702,476]  <- best FALSE positive
+  MARGIN         : +0.1097  [ROBUST]
+
